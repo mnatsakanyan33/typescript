@@ -1,9 +1,16 @@
-"use strict";
-
-class UserAccount {
-    constructor(name, id) {
-        this.name = name;
-        this.id = id;
+interface User {
+    name: string;
+    id: number;
+  }
+  
+  class UserAccount {
+    name: string;
+    id: number;
+  
+    constructor(name: string, id: number) {
+      this.name = name;
+      this.id = id;
     }
-}
-const user = new UserAccount("Murphy", 1)
+  }
+  
+  const user: User = new UserAccount("Garnik", 1);
